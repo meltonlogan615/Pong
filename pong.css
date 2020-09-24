@@ -2,9 +2,25 @@
 html {
   background-color: black;
 }
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: lightgray;
+  text-align: center;
+}
+
+.instructions {
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgray;
+  display: flex;
+  margin: 0.5rem;
+  text-align: left;
+
+  justify-content: space-around;
+}
 
 canvas {
   background: rgb(0, 110, 0);
   display: block;
-  margin: 5rem auto;
+  margin: 1rem auto;
 }

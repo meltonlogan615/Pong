@@ -30,7 +30,6 @@ var zKeyPressed = false;
 var pKeyPressed = false;
 var lKeyPressed = false;
 var fiveKeyPressed = false;
-var ballSpeed = 10;
 
 function drawCenterLine() {
   ctx.beginPath();
@@ -40,9 +39,6 @@ function drawCenterLine() {
   ctx.closePath()
 }
 
-function setUpNewMatch() {
-
-}
 function leftPlayerScore() {
   ctx.font = "20px Courier";
   ctx.fillStyle = "white";
@@ -86,6 +82,7 @@ function tableTop() {
   drawBall();
   rightPlayerScore();
   leftPlayerScore();
+
   ballPositionX += dx;
   ballPositionY += dy;
 
