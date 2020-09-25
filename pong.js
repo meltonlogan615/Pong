@@ -93,7 +93,7 @@ function tableTop() {
 
   // Paddle Mechanisms
   if (ballPositionX < paddleLeftLeading) {
-    if (ballPositionY - ballSize > paddleLeft - 20 && ballPositionY < paddleLeft + paddleHeight) {
+    if (ballPositionY - ballSize > paddleLeft - 30 && ballPositionY < paddleLeft + paddleHeight) {
       dx = -dx;
     } else {
       playerScoreRight += 1
@@ -105,7 +105,7 @@ function tableTop() {
       ballPositionY = canvas.height / 2;
     }
   } else if (ballPositionX == canvas.width - ballSize*1.5) {
-    if (ballPositionY - ballSize > paddleRight - 20 && ballPositionY < paddleRight + paddleHeight) {
+    if (ballPositionY - ballSize > paddleRight - 30 && ballPositionY < paddleRight + paddleHeight) {
       dx = -dx;
     } else {
       playerScoreLeft += 1
